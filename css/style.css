@@ -50,6 +50,7 @@ h1{
 /*Top-Cards*/
 .top-cards{
     margin-top:-50px;
+    margin-bottom: 2em;
 }
 
 /*Card*/
@@ -133,6 +134,7 @@ h1{
 
 /*Overview*/
 .overview{
+    padding-bottom: 2em;
 }
 
 h2{
@@ -193,3 +195,32 @@ h2{
 .card-small-percentage img {
     margin-right: 5px;
 }
+
+@media screen and (min-width: 480px){
+   .grid{
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 25px;
+   }
+
+   .wrapper{
+       max-width: 1440px;
+       margin: auto;
+   }
+
+}
+
+@media screen and (min-width: 768px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
