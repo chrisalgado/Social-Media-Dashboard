@@ -15,6 +15,7 @@ body{
     --instagram-2: hsl(329, 70%, 58%);
     --youtube: hsl(348, 97%, 39%);
     --gray: #5f616d; 
+    --cardGray: #f0f3fa;
 }
 
 .wrapper{
@@ -224,3 +225,36 @@ h2{
 
 }
 
+@media (prefers-color-scheme: dark){
+    body{
+        background:#1d2029;
+        color:white;
+    }
+
+    .header{
+        background: #161922;
+    }
+
+    :root{
+        --cardGray: #252b43;
+        --gray: #8088ad;
+    }
+
+    .card{
+        color: white;
+        background: #252b43;
+    }
+
+    .card-followers-title{
+        color: white;
+    }
+
+    .card-small{
+        background: #252b43;
+    }
+
+    .card-small-views{
+        color:#8088ad
+    }
+
+}
